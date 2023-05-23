@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import './Business.css';
 
 const business = {
@@ -16,6 +16,7 @@ const business = {
   class Business extends React.Component {
     render() {
       return (
+        <div className='results'>
           <div className="Business">
             <div className="image-container">
                 <img src={business.imageSrc} alt=''/>
@@ -34,6 +35,7 @@ const business = {
               </div>    
             </div>
           </div>
+        </div>
       )
     }
   }
