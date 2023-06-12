@@ -12,6 +12,8 @@ const BusinessList = () => {
       <Business />
       <Business />
       <Business />
+      <Business />
+      <Business />
     </div>
   );
 };
