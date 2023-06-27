@@ -1,16 +1,20 @@
-import React from "react";
-import styles from "./BusinessList.module.css";
+import React from 'react';
+import './BusinessList.css';
 
-import Business from "../Business/Business";
+import Business from '../Business/Business';
 
-const BusinessList = ({ businesses }) => {
-  return (
-    <div className={styles.BusinessList}>
-      {businesses.map((business) => {
-        return <Business business={business} key={business.name} />;
-      })}
-    </div>
-  );
-};
+class BusinessList extends React.Component {
+  render() {
+    return (
+      <div className="BusinessList">
+        {
+          this.props.businesses.map(business => {
+            return <Business business={business} key={business.id} />
+          })
+        }
+      </div>
+    );
+  }
+}
 
 export default BusinessList;

@@ -1,9 +1,3 @@
-# Ravenous Project
+## ravenous
 
-This is a restaurant recommendation website that allows users to search for local businesses based on their location and keywords.
-
-The technologies used in this project are:
-- `HTML`
-- `CSS`
-- `Javascript`
-- `React`
+A client-side React application, utilizing the Yelp API to search for local businesses.
